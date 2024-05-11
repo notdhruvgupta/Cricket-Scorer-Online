@@ -41,7 +41,7 @@ export default function Start() {
                         Restart
                     </div>
                 </div>}
-            <div className={`grid grid-cols-3 min-h-screen ${modal === 0 ? 'opacity-15' : 'none'}`}>
+            <div className={`grid md:grid-cols-3 min-h-screen ${modal === 0 ? 'opacity-15' : 'none'}`}>
                 <TeamOne teamOne={teamOne} setTeamOne={setTeamOne} teamOneScore={teamOneScore} setTeamOneScore={setTeamOneScore} />
                 <Scorer win={win} setWin={setWin} battingTeam={battingTeam} teamOneScore={teamOneScore} teamTwoScore={teamTwoScore} setTeamOneScore={setTeamOneScore} setTeamTwoScore={setTeamTwoScore} setBattingTeam={setBattingTeam} team={battingTeam === 1 ? teamOne : teamTwo} />
                 <TeamTwo teamTwo={teamTwo} setTeamTwo={setTeamTwo} teamTwoScore={teamTwoScore} setTeamTwoScore={setTeamTwoScore} />
